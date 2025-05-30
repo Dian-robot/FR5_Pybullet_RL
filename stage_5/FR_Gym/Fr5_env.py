@@ -71,7 +71,7 @@ class FR5_Env(gym.Env):
         #     "/home/woshihg/PycharmProjects/FR5_Reinforcement-learning_0/FR_Gym/FR5_Reinforcement-learning/models/PPO/1107-121135/best_model.zip")
         # 创建机械臂
         self.fr5 = self.p.loadURDF(
-            r"D:\postgraduate\project\FR_Reinforcement\stage_5\fr5_description\urdf\fr5v6.urdf",
+            r"/root/FR5_Pybullet_RL/stage_5/fr5_description/urdf/fr5v6.urdf",
             useFixedBase=True, basePosition=[0, 0, 0],
             baseOrientation=p.getQuaternionFromEuler([0, 0, np.pi]),
             flags=p.URDF_USE_SELF_COLLISION

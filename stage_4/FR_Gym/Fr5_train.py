@@ -35,7 +35,7 @@ test = args.test
 def make_env(i):
     def _init():
         if i == 0:
-            env = FR5_Env(gui=True)
+            env = FR5_Env(gui=False)
         else:
             env = FR5_Env(gui=False)
         env = Monitor(env, logs_dir)

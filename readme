@@ -1,1 +1,1 @@
- Stage5里边有完整工程，其他阶段直接替换掉env\reward\train三个文件即可
+可以直接运行Fr_train 以及test/Fr_test ,注意修改路径问题

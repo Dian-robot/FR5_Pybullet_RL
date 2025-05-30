@@ -8,20 +8,20 @@ import sys
 
 import numpy as np
 from scipy.spatial.transform import Rotation as R
-sys.path.append(r"D:\postgraduate\project\FR_Reinforcement\stage_5\utils")
-sys.path.append(r"D:\postgraduate\project\FR_Reinforcement\stage_5\FR_Gym")
+sys.path.append(r"/root/FR5_Pybullet_RL/stage_5/utils")
+sys.path.append(r"/root/FR5_Pybullet_RL/stage_5/FR_Gym")
 from stable_baselines3 import A2C, PPO, DDPG, TD3
 
 sys.path.append('..')
 from Fr5_env import FR5_Env
 import time
-from arguments import get_args
+from utils.arguments import get_args
 
 if __name__ == '__main__':
     args, kwargs = get_args()
-    env = FR5_Env(gui=True)
+    env = FR5_Env(gui=False)
     env.render()
-    model = PPO.load(r"FR5_Reinforcement-learning/models/PPO/0416-130114/best_model.zip")
+    model = PPO.load(r"/root/FR5_Pybullet_RL/stage_5/best_model.zip")
     # model = TD3.load("F:\\Pycharm_project\\RL\\models\\TD3\\TD3-run-eposide270.zip")
     # model = DDPG.load("F:\\Pycharm_project\\RL\\models\\DDPG\\DDPG-run-eposide282.zip")
     # model = DDPG.load(r"D:\postgraduate\project\FR_Reinforcement_all_in\FR5_Reinforcement-learning\models\PPO\0221-120301\best_model.zip")

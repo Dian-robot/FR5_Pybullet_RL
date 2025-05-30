@@ -116,7 +116,7 @@ class FR5_Env(gym.Env):
         """
         # 创建机械臂
         self.fr5 = self.p.loadURDF(
-            r"D:\postgraduate\project\FR_Reinforcement\stage_1\fr5_description\urdf\fr5v6.urdf",
+            "/root/FR5_Pybullet_RL/stage_1/fr5_description/urdf/fr5v6.urdf",
             useFixedBase=True, basePosition=[0, 0, 0],
             baseOrientation=p.getQuaternionFromEuler([0, 0, np.pi]),
             flags=p.URDF_USE_SELF_COLLISION
